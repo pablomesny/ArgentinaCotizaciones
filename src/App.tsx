@@ -1,12 +1,11 @@
 import { Logo } from './components/Logo';
-import './styles/styles.css';
 
-function App() {
+export const App = () => {
   return (
-    <header>
-      <Logo />
-    </header>
+    <div className="mt-3">
+      <header>
+        <Logo />
+      </header>
+    </div>
   );
-}
-
-export default App;
+};
