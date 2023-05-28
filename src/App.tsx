@@ -1,7 +1,4 @@
-import { Converter } from './components/Converter';
-import { Footer } from './components/Footer';
-import { Logo } from './components/Logo';
-import { PricesDashboard } from './components/PricesDashboard';
+import { Converter, Footer, Logo, PricesDashboard } from './components';
 
 export const App = () => {
   return (
@@ -16,7 +13,7 @@ export const App = () => {
         </aside>
 
         <article className="w-9/12">
-          <PricesDashboard cols={ 2 } />
+          <PricesDashboard />
         </article>
       </main>
 

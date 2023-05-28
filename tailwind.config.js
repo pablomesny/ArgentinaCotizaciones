@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       animation: {
-        'from-top': 'fromTop 1s linear'
+        'from-top': 'fromTop 0.5s linear',
+        'from-back': 'fromBack 0.5s linear'
       },
       colors: {
         'aqua-green': '#7A9A93',
@@ -24,6 +25,14 @@ export default {
           },
           to: {
             transform: 'translateY(0%)'
+          }
+        },
+        fromBack: {
+          from: {
+            opacity: 0
+          },
+          to: {
+            opacity: 1
           }
         }
       }

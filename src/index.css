@@ -20,4 +20,16 @@
         box-shadow: -5px 5px 16px #5f7873,
                     5px -5px 16px #95bcb3;
     }
+
+    .price-item {
+        @apply flex justify-start bg-light-aqua-green h-20 px-3 w-full items-center rounded-md;
+    }
+
+    .price-skeleton {
+        @apply bg-gray-200 h-20 px-3 w-full rounded-md animate-pulse;
+    }
+
+    .update-skeleton {
+        @apply bg-gray-200 animate-pulse relative mr-auto top-4 h-4 w-full rounded-md;
+    }
 }

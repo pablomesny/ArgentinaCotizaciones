@@ -1,0 +1,1 @@
+export const USD_ENDPOINT = 'https://dolar-api-argentina.vercel.app/v1/dolares';
