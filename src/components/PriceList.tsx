@@ -6,7 +6,7 @@ interface Props {
 }
 
 export const PriceList = ({ usdPrices }: Props) => {
-  return (
+  return <>{
     usdPrices.map( price => (
       <PriceItem
         key={price.name}
@@ -15,5 +15,5 @@ export const PriceList = ({ usdPrices }: Props) => {
         salePrice={price.sale}
       />
     ))
-  );
+  }</>;
 };
