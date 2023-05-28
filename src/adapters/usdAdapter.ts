@@ -9,8 +9,33 @@ export interface UsdPricesFetch {
 export const createUsdAdapter = (usd: UsdPricesFetch[]) => {
   const usdPrices = usd.map(price => {
 
-    if (price.casa === 'contadoconliqui') {
-      price.casa = 'contadoConLiquidacion';
+    switch (price.casa) {
+    case 'oficial':
+      price.casa = 'dolar oficial';
+      break;
+      
+    case 'blue':
+      price.casa = 'dolar blue';
+      break;
+      
+    case 'bolsa':
+      price.casa = 'dolar bolsa';
+      break;
+      
+    case 'contadoconliqui':
+      price.casa = 'dolar ccl';
+      break;
+      
+    case 'solidario':
+      price.casa = 'dolar solidario';
+      break;
+      
+    case 'mayorista':
+      price.casa = 'dolar mayorista';
+      break;
+      
+    default:
+      break;
     }
 
     return {
