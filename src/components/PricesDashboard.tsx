@@ -1,8 +1,11 @@
+import { UsdPrices } from '../interfaces/UsdPrices';
 import { PriceList, Skeleton } from './';
-import { useUsdPrices } from '../hooks/useUsdPrices';
 
-export const PricesDashboard = () => {
-  const { usdPrices } = useUsdPrices();
+interface Props {
+  usdPrices: UsdPrices[];
+}
+
+export const PricesDashboard = ({ usdPrices }: Props ) => {
 
   return (
     <div className="neumorphism transition animate-from-back h-96 flex flex-col">
