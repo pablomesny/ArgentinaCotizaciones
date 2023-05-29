@@ -1,5 +1,5 @@
 export * from './Converter';
-export * from './CurrencySelect';
+export * from './CurrencySelectList';
 export * from './Footer';
 export * from './Logo';
 export * from './PriceItem';
