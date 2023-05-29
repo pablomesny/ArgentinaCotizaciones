@@ -6,14 +6,16 @@ interface Props {
 }
 
 export const PriceList = ({ usdPrices }: Props) => {
-  return <>{
-    usdPrices.map( price => (
-      <PriceItem
-        key={price.name}
-        name={price.name}
-        buyPrice={price.buy}
-        salePrice={price.sale}
-      />
-    ))
-  }</>;
+  return (
+    <>
+      {usdPrices.map(price => (
+        <PriceItem
+          key={price.name}
+          name={price.name}
+          buyPrice={price.buy}
+          salePrice={price.sale}
+        />
+      ))}
+    </>
+  );
 };
