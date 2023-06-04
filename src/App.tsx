@@ -11,7 +11,7 @@ export const App = () => {
         <Logo />
       </header>
 
-      <main className="container flex mx-auto -mt-20 w-11/12 gap-10">
+      <main className="container flex mx-auto -mt-6 w-11/12 gap-10">
         <aside className="w-3/12">
           <Converter usdPrices={ usdPrices } />
         </aside>

@@ -1,6 +1,6 @@
 export interface UsdPrices {
     sale: number;
-    buy: number | null;
+    buy: number;
     updatedAt: string;
     name: string;
 }
